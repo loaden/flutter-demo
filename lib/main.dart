@@ -15,16 +15,20 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) {
-            return const ParentManageChildStateWidget();
-          }),
-        );
-      },
-      child: const Text('父窗口管理子部件状态'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Flutter 学习示例"),
+      ),
+      body: TextButton(
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) {
+              return const ParentManageChildStateWidget();
+            }),
+          );
+        },
+        child: const Text('父窗口管理子部件状态'),
+      ),
     );
   }
 }
