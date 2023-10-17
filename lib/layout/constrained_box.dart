@@ -8,8 +8,13 @@ class ConstrainedBoxLayout extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('ConstrainedBox')),
       body: ConstrainedBox(
-        constraints: const BoxConstraints(minHeight: 900, minWidth: 500),
-        child: Container(color: Colors.orange),
+        constraints: const BoxConstraints(minHeight: 30, maxHeight: 60),
+        child: Container(
+          color: Colors.greenAccent,
+          height: 100,
+          width: 350,
+          child: const TextField(),
+        ),
       ),
     );
   }
