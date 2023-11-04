@@ -18,6 +18,10 @@ class Home extends StatelessWidget {
             onPressed: () => route.go(context, route.constrainedBox),
             child: const Text('ConstrainedBox 父约束'),
           ),
+          TextButton(
+            onPressed: () => route.go(context, route.animatedContainerWidget),
+            child: const Text('AnimatedContainer'),
+          ),
         ],
       ),
     );
