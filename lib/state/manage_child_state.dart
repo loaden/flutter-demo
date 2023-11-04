@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ParentManageChildStateWidget extends StatefulWidget {
-  const ParentManageChildStateWidget({super.key});
+class ManageChildStateWidget extends StatefulWidget {
+  const ManageChildStateWidget({super.key});
 
   @override
-  State<ParentManageChildStateWidget> createState() =>
-      _ParentManageChildStateWidgetState();
+  State<ManageChildStateWidget> createState() => _ManageChildStateWidgetState();
 }
 
-class _ParentManageChildStateWidgetState
-    extends State<ParentManageChildStateWidget> {
+class _ManageChildStateWidgetState extends State<ManageChildStateWidget> {
   bool _green = false;
 
   @override
@@ -45,7 +43,7 @@ class Button extends StatelessWidget {
       onPressed: _press,
       style: ElevatedButton.styleFrom(
           backgroundColor: green ? Colors.orange : Colors.green),
-      child: const Icon(Icons.add),
+      child: const Icon(Icons.ads_click),
     );
   }
 
