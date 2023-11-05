@@ -29,7 +29,7 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
                 : Alignment.topLeft,
           );
         },
-        child: const Icon(Icons.start),
+        child: const Icon(Icons.play_arrow),
       ),
     );
   }
