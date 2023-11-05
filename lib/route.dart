@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/animate/animation_controller.dart';
 import 'package:flutterapp/animate/tween_animation_builder.dart';
 import 'package:flutterapp/home.dart';
 import 'package:flutterapp/layout/constrained_box.dart';
@@ -11,6 +12,7 @@ const String constrainedBox = 'constrained_box';
 const String manageChildState = 'manage_child_state';
 const String animatedContainer = 'animated_container';
 const String tweenBuilder = 'tween_animation_builder';
+const String animationController = 'animation_controller';
 
 // Control function
 Route<dynamic> controller(RouteSettings settings) {
@@ -34,6 +36,10 @@ Route<dynamic> controller(RouteSettings settings) {
     case tweenBuilder:
       return MaterialPageRoute(
         builder: (context) => const TweenBuilderPage(),
+      );
+    case animationController:
+      return MaterialPageRoute(
+        builder: (context) => const AnimationControllerPage(),
       );
     default:
       throw ('The route does not exist');

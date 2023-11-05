@@ -26,6 +26,10 @@ class Home extends StatelessWidget {
             onPressed: () => route.go(context, route.tweenBuilder),
             child: const Text('TweenAnimationBuilder'),
           ),
+          TextButton(
+            onPressed: () => route.go(context, route.animationController),
+            child: const Text('AnimationController'),
+          ),
         ],
       ),
     );
