@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AnimatedContainerWidget extends StatefulWidget {
-  const AnimatedContainerWidget({super.key});
+class AnimatedContainerPage extends StatefulWidget {
+  const AnimatedContainerPage({super.key});
 
   @override
-  State<AnimatedContainerWidget> createState() =>
-      _AnimatedContainerWidgetState();
+  State<AnimatedContainerPage> createState() => _AnimatedContainerPageState();
 }
 
-class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
+class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
   Alignment _alignment = Alignment.topLeft;
 
   @override

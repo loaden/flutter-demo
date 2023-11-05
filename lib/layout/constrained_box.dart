@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ConstrainedBoxLayout extends StatelessWidget {
-  const ConstrainedBoxLayout({super.key});
+class ConstrainedBoxPage extends StatelessWidget {
+  const ConstrainedBoxPage({super.key});
 
   @override
   Widget build(BuildContext context) {

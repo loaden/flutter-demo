@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TweenBuilderWidget extends StatefulWidget {
-  const TweenBuilderWidget({super.key});
+class TweenBuilderPage extends StatefulWidget {
+  const TweenBuilderPage({super.key});
 
   @override
-  State<TweenBuilderWidget> createState() => _TweenBuilderWidgetState();
+  State<TweenBuilderPage> createState() => _TweenBuilderPageState();
 }
 
-class _TweenBuilderWidgetState extends State<TweenBuilderWidget> {
+class _TweenBuilderPageState extends State<TweenBuilderPage> {
   double _endPosition = 0.0;
 
   @override

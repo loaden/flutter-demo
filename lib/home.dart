@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
             child: const Text('ConstrainedBox 父约束'),
           ),
           TextButton(
-            onPressed: () => route.go(context, route.animatedContainerWidget),
+            onPressed: () => route.go(context, route.animatedContainer),
             child: const Text('AnimatedContainer'),
           ),
           TextButton(

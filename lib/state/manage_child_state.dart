@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ManageChildStateWidget extends StatefulWidget {
-  const ManageChildStateWidget({super.key});
+class ManageChildStatePage extends StatefulWidget {
+  const ManageChildStatePage({super.key});
 
   @override
-  State<ManageChildStateWidget> createState() => _ManageChildStateWidgetState();
+  State<ManageChildStatePage> createState() => _ManageChildStatePageState();
 }
 
-class _ManageChildStateWidgetState extends State<ManageChildStateWidget> {
+class _ManageChildStatePageState extends State<ManageChildStatePage> {
   bool _green = false;
 
   @override
