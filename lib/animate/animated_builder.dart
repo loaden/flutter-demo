@@ -9,16 +9,10 @@ class AnimatedBuilderPage extends StatefulWidget {
 
 class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
     with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-      duration: const Duration(seconds: 2),
-      vsync: this,
-    )..repeat();
-  }
+  late final AnimationController _controller = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )..repeat();
 
   @override
   void dispose() {
