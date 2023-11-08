@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/animate/animated_builder.dart';
 import 'package:flutterapp/animate/animation_controller.dart';
 import 'package:flutterapp/animate/tween_animation_builder.dart';
 import 'package:flutterapp/home.dart';
@@ -13,6 +14,7 @@ const String manageChildState = 'manage_child_state';
 const String animatedContainer = 'animated_container';
 const String tweenBuilder = 'tween_animation_builder';
 const String animationController = 'animation_controller';
+const String animatedBuilder = 'animated_builder';
 
 // Control function
 Route<dynamic> controller(RouteSettings settings) {
@@ -40,6 +42,10 @@ Route<dynamic> controller(RouteSettings settings) {
     case animationController:
       return MaterialPageRoute(
         builder: (context) => const AnimationControllerPage(),
+      );
+    case animatedBuilder:
+      return MaterialPageRoute(
+        builder: (context) => const AnimatedBuilderPage(),
       );
     default:
       throw ('The route does not exist');
