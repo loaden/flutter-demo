@@ -10,7 +10,6 @@ class AnimatedBuilderPage extends StatefulWidget {
 class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation _widthAnimation;
 
   @override
   void initState() {
@@ -19,7 +18,6 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
       duration: const Duration(seconds: 2),
       vsync: this,
     )..repeat();
-    _widthAnimation = Tween(begin: 110.0, end: 220.0).animate(_controller);
   }
 
   @override
@@ -30,6 +28,9 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
 
   @override
   Widget build(BuildContext context) {
+    final Animation widthAnimation =
+        Tween(begin: 110.0, end: 220.0).animate(_controller);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("AnimatedBuilder"),
@@ -40,7 +41,7 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
           print(_controller.value);
           return Center(
             child: Container(
-              width: _widthAnimation.value,
+              width: widthAnimation.value,
               height: 200,
               color: Colors.blue,
               child: child,
