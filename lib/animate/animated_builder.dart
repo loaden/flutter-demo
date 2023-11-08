@@ -31,6 +31,11 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
     final Animation widthAnimation =
         Tween(begin: 110.0, end: 220.0).animate(_controller);
 
+    final Animation heightAnimation = Tween(begin: 110.0, end: 350.0)
+        .chain(CurveTween(curve: Curves.bounceInOut))
+        .chain(CurveTween(curve: const Interval(0.3, 0.6)))
+        .animate(_controller);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("AnimatedBuilder"),
@@ -42,7 +47,7 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
           return Center(
             child: Container(
               width: widthAnimation.value,
-              height: 200,
+              height: heightAnimation.value,
               color: Colors.blue,
               child: child,
             ),
