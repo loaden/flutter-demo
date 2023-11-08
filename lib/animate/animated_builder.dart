@@ -38,7 +38,7 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
           print(_controller.value);
           return Center(
             child: Container(
-              width: _controller.value * 100 + 100,
+              width: Tween(begin: 100.0, end: 300.0).evaluate(_controller),
               height: 200,
               color: Colors.blue,
               child: child,
